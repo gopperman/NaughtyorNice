@@ -173,7 +173,7 @@ main {
 #questions li h2.brandon {margin: .2em 0 .2em 0;}
 
 .social {padding: 0 0 1em 0;}
-.limit {max-width: 80%; margin: 1em auto 0;}
+.limit {max-width: 82%; margin: 1em auto 0;}
 .nonimg {max-width: 50%;}
 
 .menu {
@@ -218,6 +218,7 @@ main {
 	-moz-box-shadow: -4px 4px 0px 0px rgba(100,22,22,1);
 	box-shadow: -4px 4px 0px 0px rgba(100,22,22,1);
 	text-transform: uppercase;
+	font-family: 'Avenir LT W01 85 Heavy', 'Arial', Helvetica, sans-serif;
 	font-weight: 500;
 	letter-spacing: 1px;
 }
@@ -498,7 +499,7 @@ main {
 	  max-width: 90%;
 	}
 	#questions #results {
-	  background: rgba(0,0,0,.1);
+	  background: rgba(0,0,0,.25);
 	}
 }
 @media only screen and (min-width: 1030px) {
@@ -508,7 +509,10 @@ main {
 	  top: -60px;
 	}
 	#questions {max-width: 650px;}
-	#questions #results {width: 600px; height: 575px;}
+	#questions #results {width: 600px; 
+		height: 540px;
+	}
+	#questions #results .limit {font-size: 20px; margin: .5em auto; line-height: 1.2em;}
 	#questions li {font-size: 24px;}
 }
 

@@ -117,8 +117,8 @@
 				<p class="fancy">{{ (score >= 0) && 'Oh Joy!' || 'Whoopsie!' }}</p>
 				<h2 class="brandon">You've Been</h2>
 				<img class="nonimg" src="{{ (score >= 0) && '/app/img/nice.png' || '/app/img/naughty.png' }}" alt="{{ (score >= 0) && 'Nice' || 'Naughty' }}" />
- 				<p class="limit"><b>You scored a {{ score }} on the Naughty or Nice scale.</b><br />
-				{{ flavor }}<br />
+ 				<p class="limit"><b>You scored {{ score }} on the Naughty or Nice meter.</b><br />
+				<small>{{ flavor }}</small><br />
 				</p>
 				<p class="social">
 				<small>SHARE YOUR RESULTS:</small><br />
