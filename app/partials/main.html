@@ -13,10 +13,10 @@
 
 			<li id="q1">
 				<h2>On an average work day, how much time do you spend lol'ing at pictures of cute animals?</h2>
-				<input type="radio" ng-click="enable()" name="q1" class="answer" value="-20"> Duh, I'm lol'ing all day. <br>
-				<input type="radio" ng-click="enable()" name="q1" class="answer" value="10"> I have a few lols on my lunch break. <br>
-				<input type="radio" ng-click="enable()" name="q1" class="answer" value="0"> Only when my work is done. <br>
-				<input type="radio" ng-click="enable()" name="q1" class="answer" value="-10"> There are kittens on the internet?
+				<input type="radio" ng-click="enable()" name="q1" id="1-1" class="answer" value="-20"> <label for="1-1">Duh, I'm lol'ing all day.</label><br>
+				<input type="radio" ng-click="enable()" name="q1" id="1-2" class="answer" value="10"> <label for="1-2">I have a few lols on my lunch break. </label><br>
+				<input type="radio" ng-click="enable()" name="q1" id="1-3" class="answer" value="0"> <label for="1-3">Only when my work is done. </label><br>
+				<input type="radio" ng-click="enable()" name="q1" id="1-4" class="answer" value="-10"> <label for="1-4">There are kittens on the internet?</label>
 				<div class="questNav">
 					<a ng-click="prevQ()" class="button prev">Back</a>
 					<a ng-click="nextQ()" class="button next green disabled">Next</a>
@@ -24,11 +24,11 @@
 
 			<li id="q2">
 				<h2>Who is your favorite Christmas character?</h2>
-				<input type="radio" ng-click="enable()" name="q2" class="answer" value="-10"> The Grinch <br>
-				<input type="radio" ng-click="enable()" name="q2" class="answer" value="10"> Ralphie Parker <br>
-				<input type="radio" ng-click="enable()" name="q2" class="answer" value="-20"> Ebenezer Scrooge<br>
-				<input type="radio" ng-click="enable()" name="q2" class="answer" value="20"> Buddy the Elf <br>
-				<input type="radio" ng-click="enable()" name="q2" class="answer" value="0"> The Hebrew Hammer
+				<input type="radio" ng-click="enable()" name="q2" id="2-1" class="answer" value="-10"> <label for="2-1">The Grinch </label><br>
+				<input type="radio" ng-click="enable()" name="q2" id="2-2" class="answer" value="10"> <label for="2-2">Ralphie Parker </label><br>
+				<input type="radio" ng-click="enable()" name="q2" id="2-3" class="answer" value="-20"> <label for="2-3">Ebenezer Scrooge</label><br>
+				<input type="radio" ng-click="enable()" name="q2" id="2-4" class="answer" value="20"> <label for="2-4">Buddy the Elf </label><br>
+				<input type="radio" ng-click="enable()" name="q2" id="2-5" class="answer" value="0"> <label for="2-5">The Hebrew Hammer</label>
 				<div class="questNav">
 					<a ng-click="prevQ()" class="button prev">Back</a>
 					<a ng-click="nextQ()" class="button next green disabled">Next</a>
@@ -36,10 +36,10 @@
 
 			<li id="q3">
 				<h2>Now's the time to come clean. Have you committed any naughty crimes lately? <small>(check all that apply)</small></h2>
-				<input type="checkbox" name="q3" class="answer" value="-10"> You're late to work sometimes. <br>
-				<input type="checkbox" name="q3" class="answer" value="-20"> Most of your Christmas shopping is for yourself. <br>
-				<input type="checkbox" name="q3" class="answer" value="-30"> You denied your Mom's friend request. <br>
-				<input type="checkbox" name="q3" class="answer" value="-10"> You've been posting embarrasing photos of your friends (on purpose). <br>
+				<input type="checkbox" name="q3" id="3-1" class="answer" value="-10"> <label for="3-1">You're late to work sometimes. </label><br>
+				<input type="checkbox" name="q3" id="3-2" class="answer" value="-20"> <label for="3-2">Most of your Christmas shopping is for yourself. </label><br>
+				<input type="checkbox" name="q3" id="3-3" class="answer" value="-30"> <label for="3-3">You denied your Mom's friend request. </label><br>
+				<input type="checkbox" name="q3" id="3-4" class="answer" value="-10"> <label for="3-4">You've been posting embarrasing photos of your friends (on purpose). </label>
 				<div class="questNav">
 					<a ng-click="prevQ()" class="button prev">Back</a>
 					<a ng-click="nextQ()" class="button next green">Next</a>
@@ -47,10 +47,10 @@
 
 			<li id="q4">
 				<h2>Now's the time to win some brownie points. How about some good deeds?</h2>				
-				<input type="checkbox" name="q4" class="answer" value="10"> You helped an old lady cross the street. <br>
-				<input type="checkbox" name="q4" class="answer" value="10"> You gave a donation to charity. <br>
-				<input type="checkbox" name="q4" class="answer" value="30"> You baked christmas cookies for all of your friends.<br>
-				<input type="checkbox" name="q4" class="answer" value="20"> You helped a co-worker with a project during a deadline crunch.<br>
+				<input type="checkbox" name="q4" id="4-1" class="answer" value="10"> <label for="4-1">You helped an old lady cross the street. </label><br>
+				<input type="checkbox" name="q4" id="4-2" class="answer" value="10"> <label for="4-2">You gave a donation to charity. </label><br>
+				<input type="checkbox" name="q4" id="4-3" class="answer" value="30"> <label for="4-3">You baked christmas cookies for all of your friends.</label><br>
+				<input type="checkbox" name="q4" id="4-4" class="answer" value="20"> <label for="4-4">You helped a co-worker with a project during a deadline crunch.</label>
 				<div class="questNav">
 					<a ng-click="prevQ()" class="button prev">Back</a>
 					<a ng-click="nextQ()" class="button next green">Next</a>
@@ -58,10 +58,10 @@
 
 			<li id="q5">
 				<h2>This year, your family's holiday card best resembles:</h2>
-				<input type="radio" ng-click="enable()" name="q5" class="answer" value="-20"> The Kardashians (The Kardashians) <br>
-				<input type="radio" ng-click="enable()" name="q5" class="answer" value="10"> The Dunphys (Modern Family)<br>
-				<input type="radio" ng-click="enable()" name="q5" class="answer" value="20"> The Tanners (Full House)<br>
-				<input type="radio" ng-click="enable()" name="q5" class="answer" value="-10"> The Bluths (Arrested Development)
+				<input type="radio" ng-click="enable()" name="q5" id="5-1" class="answer" value="-20"> <label for="5-1">The Kardashians (The Kardashians) </label><br>
+				<input type="radio" ng-click="enable()" name="q5" id="5-2" class="answer" value="10"> <label for="5-2">The Dunphys (Modern Family)</label><br>
+				<input type="radio" ng-click="enable()" name="q5" id="5-3" class="answer" value="20"> <label for="5-3">The Tanners (Full House)</label><br>
+				<input type="radio" ng-click="enable()" name="q5" id="5-4" class="answer" value="-10"> <label for="5-4">The Bluths (Arrested Development)</label>
 				<div class="questNav">
 					<a ng-click="prevQ()" class="button prev">Back</a>
 					<a ng-click="nextQ()" class="button next green disabled">Next</a>
@@ -69,11 +69,11 @@
 
 			<li id="q6">
 				<h2>What is your spirit animal?</h2>
-				<input type="radio" ng-click="enable()" name="q6" class="answer" value="-10"> <a href="http://www.deargrumpycat.com/wp-content/uploads/2013/02/Grumpy-Cat1.jpg" target="_blank">Grumpy Cat</a><br>
-				<input type="radio" ng-click="enable()" name="q6" class="answer" value="20"> <a href="https://images.encyclopediadramatica.es/3/3e/Doge_full_image.jpg" target="_blank">Doge</a> <br>
-				<input type="radio" ng-click="enable()" name="q6" class="answer" value="-20"> <a href="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA3LzI2L2E3L3NoYXJrbmFkb2F0LmQ4MjE3LmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/9c356162/d87/sharknado-attack.jpg" target="_blank">Sharknado</a><br>
-				<input type="radio" ng-click="enable()" name="q6" class="answer" value="10"> <a href="http://cdn3.dogonews.com/pictures/6853/content/twiggy_water_skiing.jpg?1299453976" target="_blank">A water-skiing squirrel</a><br>
-				<input type="radio" ng-click="enable()" name="q6" class="answer" value="0"> Honey Boo Boo
+				<input type="radio" ng-click="enable()" name="q6" id="6-1" class="answer" value="-10"> <label for="6-1"><a href="http://www.deargrumpycat.com/wp-content/uploads/2013/02/Grumpy-Cat1.jpg" target="_blank">Grumpy Cat</a></label><br>
+				<input type="radio" ng-click="enable()" name="q6" id="6-2" class="answer" value="20"> <label for="6-2"><a href="https://images.encyclopediadramatica.es/3/3e/Doge_full_image.jpg" target="_blank">Doge</a> </label><br>
+				<input type="radio" ng-click="enable()" name="q6" id="6-3" class="answer" value="-20"> <label for="6-3"><a href="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA3LzI2L2E3L3NoYXJrbmFkb2F0LmQ4MjE3LmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/9c356162/d87/sharknado-attack.jpg" target="_blank">Sharknado</a></label><br>
+				<input type="radio" ng-click="enable()" name="q6" id="6-4" class="answer" value="10"> <label for="6-4"><a href="http://cdn3.dogonews.com/pictures/6853/content/twiggy_water_skiing.jpg?1299453976" target="_blank">A water-skiing squirrel</a></label><br>
+				<input type="radio" ng-click="enable()" name="q6" id="6-5" class="answer" value="0"> <label for="6-5">Honey Boo Boo</label>
 				<div class="questNav">
 					<a ng-click="prevQ()" class="button prev">Back</a>
 					<a ng-click="nextQ()" class="button next green disabled">Next</a>
@@ -81,10 +81,10 @@
 
 			<li id="q7">
 				<h2>What's your favorite holiday drink?</h2>
-				<input type="radio" ng-click="enable()" name="q7" class="answer" value="0"> Mulled Wine<br>
-				<input type="radio" ng-click="enable()" name="q7" class="answer" value="-10"> Egg Nog<br>
-				<input type="radio" ng-click="enable()" name="q7" class="answer" value="10"> Pumpkin-spiced Chai<br>
-				<input type="radio" ng-click="enable()" name="q7" class="answer" value="-20"> Anything with booze
+				<input type="radio" ng-click="enable()" name="q7" id="7-1" class="answer" value="0"> <label for="7-1">Mulled Wine</label><br>
+				<input type="radio" ng-click="enable()" name="q7" id="7-2" class="answer" value="-10"> <label for="7-2">Egg Nog</label><br>
+				<input type="radio" ng-click="enable()" name="q7" id="7-3" class="answer" value="10"> <label for="7-3">Pumpkin-spiced Chai</label><br>
+				<input type="radio" ng-click="enable()" name="q7" id="7-4" class="answer" value="-20"> <label for="7-4">Anything with booze</label>
 				<div class="questNav">
 					<a ng-click="prevQ()" class="button prev">Back</a>
 					<a ng-click="nextQ()" class="button next green disabled">Next</a>
@@ -92,10 +92,10 @@
 
 			<li id="q8">
 				<h2>Lastly, what are you secretly wishing for this year?</h2>
-				<input type="radio" ng-click="enable()" name="q8" class="answer" value="-20"> Winning the lottery (and not sharing)<br>
-				<input type="radio" ng-click="enable()" name="q8" class="answer" value="-10"> A new iPhone<br>
-				<input type="radio" ng-click="enable()" name="q8" class="answer" value="20"> World Peace<br>
-				<input type="radio" ng-click="enable()" name="q8" class="answer" value="10"> A puppy or kitten <br>
+				<input type="radio" ng-click="enable()" name="q8" id="8-1" class="answer" value="-20"> <label for="8-1">Winning the lottery (and not sharing)</label><br>
+				<input type="radio" ng-click="enable()" name="q8" id="8-2" class="answer" value="-10"> <label for="8-2">A new iPhone</label><br>
+				<input type="radio" ng-click="enable()" name="q8" id="8-3" class="answer" value="20"> <label for="8-3">World Peace</label><br>
+				<input type="radio" ng-click="enable()" name="q8" id="8-4" class="answer" value="10"> <label for="8-4">A puppy or kitten </label>
 				<div class="questNav">
 					<a ng-click="prevQ()" class="button prev">Back</a>
 					<a ng-click="nextQ()" class="button next green disabled">Next</a>

@@ -27,6 +27,7 @@ body {
 	font-family: 'Avenir LT W01 65 Medium', 'Arial', Helvetica, sans-serif;
 	color: #fff;
 	-webkit-backface-visibility: hidden;
+	overflow: hidden;
 }
 
 a, a:visited {
@@ -543,7 +544,6 @@ main {
 	#questions #results {
 		position: relative;
 		top: -90px;
-		padding-bottom: 0;
 	}
 }
 @media screen and (-webkit-min-device-pixel-ratio: 1.5) {
