@@ -1,0 +1,140 @@
+  <header class="">
+    <h1><img src="/app/img/NaughtyOrNice.png" alt="The Naughty or Nice Meter" /></h1>
+		<a id="findOut" class="button red" ng-click="showQuiz()">Find Out The Truth</a>
+  </header>
+  <main class="">
+		<form id="quiz">
+		<ul id="questions">
+			<li><h2>Ho Ho Ho! Merry Christmas! Are you ready to find out if you've been Naughty or Nice this year?</h2>
+			<h3>...I seem to have misplaced my list, so maybe you could help me out by answering a few questions.</h3>
+				<div class="questNav">
+					<a ng-click="nextQ()" class="button next green">Next</a>
+				</div>
+
+			<li id="q1">
+				<h2>On an average work day, how much time do you spend lol'ing at pictures of cute animals?</h2>
+				<input type="radio" ng-click="enable()" name="q1" class="answer" value="-20"> Duh, I'm lol'ing all day. <br>
+				<input type="radio" ng-click="enable()" name="q1" class="answer" value="10"> I have a few lols on my lunch break. <br>
+				<input type="radio" ng-click="enable()" name="q1" class="answer" value="0"> Only when my work is done. <br>
+				<input type="radio" ng-click="enable()" name="q1" class="answer" value="-10"> There are kittens on the internet?
+				<div class="questNav">
+					<a ng-click="prevQ()" class="button prev">Back</a>
+					<a ng-click="nextQ()" class="button next green disabled">Next</a>
+				</div>
+
+			<li id="q2">
+				<h2>Who is your favorite Christmas character?</h2>
+				<input type="radio" ng-click="enable()" name="q2" class="answer" value="-10"> The Grinch <br>
+				<input type="radio" ng-click="enable()" name="q2" class="answer" value="10"> Ralphie Parker <br>
+				<input type="radio" ng-click="enable()" name="q2" class="answer" value="-20"> Ebenezer Scrooge<br>
+				<input type="radio" ng-click="enable()" name="q2" class="answer" value="20"> Buddy the Elf <br>
+				<input type="radio" ng-click="enable()" name="q2" class="answer" value="0"> The Hebrew Hammer
+				<div class="questNav">
+					<a ng-click="prevQ()" class="button prev">Back</a>
+					<a ng-click="nextQ()" class="button next green disabled">Next</a>
+				</div>
+
+			<li id="q3">
+				<h2>Now's the time to come clean. Have you committed any naughty crimes lately? <small>(check all that apply)</small></h2>
+				<input type="checkbox" name="q3" class="answer" value="-10"> You're late to work sometimes. <br>
+				<input type="checkbox" name="q3" class="answer" value="-20"> Most of your Christmas shopping is for yourself. <br>
+				<input type="checkbox" name="q3" class="answer" value="-30"> You denied your Mom's friend request. <br>
+				<input type="checkbox" name="q3" class="answer" value="-10"> You've been posting embarrasing photos of your friends (on purpose). <br>
+				<div class="questNav">
+					<a ng-click="prevQ()" class="button prev">Back</a>
+					<a ng-click="nextQ()" class="button next green">Next</a>
+				</div>
+
+			<li id="q4">
+				<h2>Now's the time to win some brownie points. How about some good deeds?</h2>				
+				<input type="checkbox" name="q4" class="answer" value="10"> You helped an old lady cross the street. <br>
+				<input type="checkbox" name="q4" class="answer" value="10"> You gave a donation to charity. <br>
+				<input type="checkbox" name="q4" class="answer" value="30"> You baked christmas cookies for all of your friends.<br>
+				<input type="checkbox" name="q4" class="answer" value="20"> You helped a co-worker with a project during a deadline crunch.<br>
+				<div class="questNav">
+					<a ng-click="prevQ()" class="button prev">Back</a>
+					<a ng-click="nextQ()" class="button next green">Next</a>
+				</div>
+
+			<li id="q5">
+				<h2>This year, your family's holiday card best resembles:</h2>
+				<input type="radio" ng-click="enable()" name="q5" class="answer" value="-20"> The Kardashians (The Kardashians) <br>
+				<input type="radio" ng-click="enable()" name="q5" class="answer" value="10"> The Dunphys (Modern Family)<br>
+				<input type="radio" ng-click="enable()" name="q5" class="answer" value="20"> The Tanners (Full House)<br>
+				<input type="radio" ng-click="enable()" name="q5" class="answer" value="-10"> The Bluths (Arrested Development)
+				<div class="questNav">
+					<a ng-click="prevQ()" class="button prev">Back</a>
+					<a ng-click="nextQ()" class="button next green disabled">Next</a>
+				</div>
+
+			<li id="q6">
+				<h2>What is your spirit animal?</h2>
+				<input type="radio" ng-click="enable()" name="q6" class="answer" value="-10"> <a href="http://www.deargrumpycat.com/wp-content/uploads/2013/02/Grumpy-Cat1.jpg" target="_blank">Grumpy Cat</a><br>
+				<input type="radio" ng-click="enable()" name="q6" class="answer" value="20"> <a href="https://images.encyclopediadramatica.es/3/3e/Doge_full_image.jpg" target="_blank">Doge</a> <br>
+				<input type="radio" ng-click="enable()" name="q6" class="answer" value="-20"> <a href="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA3LzI2L2E3L3NoYXJrbmFkb2F0LmQ4MjE3LmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/9c356162/d87/sharknado-attack.jpg" target="_blank">Sharknado</a><br>
+				<input type="radio" ng-click="enable()" name="q6" class="answer" value="10"> <a href="http://cdn3.dogonews.com/pictures/6853/content/twiggy_water_skiing.jpg?1299453976" target="_blank">A water-skiing squirrel</a><br>
+				<input type="radio" ng-click="enable()" name="q6" class="answer" value="0"> Honey Boo Boo
+				<div class="questNav">
+					<a ng-click="prevQ()" class="button prev">Back</a>
+					<a ng-click="nextQ()" class="button next green disabled">Next</a>
+				</div>
+
+			<li id="q7">
+				<h2>What's your favorite holiday drink?</h2>
+				<input type="radio" ng-click="enable()" name="q7" class="answer" value="0"> Mulled Wine<br>
+				<input type="radio" ng-click="enable()" name="q7" class="answer" value="-10"> Egg Nog<br>
+				<input type="radio" ng-click="enable()" name="q7" class="answer" value="10"> Pumpkin-spiced Chai<br>
+				<input type="radio" ng-click="enable()" name="q7" class="answer" value="-20"> Anything with booze
+				<div class="questNav">
+					<a ng-click="prevQ()" class="button prev">Back</a>
+					<a ng-click="nextQ()" class="button next green disabled">Next</a>
+				</div>
+
+			<li id="q8">
+				<h2>Lastly, what are you secretly wishing for this year?</h2>
+				<input type="radio" ng-click="enable()" name="q8" class="answer" value="-20"> Winning the lottery (and not sharing)<br>
+				<input type="radio" ng-click="enable()" name="q8" class="answer" value="-10"> A new iPhone<br>
+				<input type="radio" ng-click="enable()" name="q8" class="answer" value="20"> World Peace<br>
+				<input type="radio" ng-click="enable()" name="q8" class="answer" value="10"> A puppy or kitten <br>
+				<div class="questNav">
+					<a ng-click="prevQ()" class="button prev">Back</a>
+					<a ng-click="nextQ()" class="button next green disabled">Next</a>
+				</div>
+
+			<li id="endQuiz">
+				<h2>Oh my! I think I have enough info to see if you've been naughty or nice.</h2>
+				<h3>Are you ready to find out?</h3>
+				<div class="questNav">
+					<a ng-click="prevQ()" class="button prev">I should check twice</a>
+					<a ng-click="calculate()" class="button next green">Yes!</a>
+				</div>
+			</li>
+			<li id="calculating">
+				<h2>Just a moment</h2>
+				<h3>Calculating...</h3>
+				<div class="candystripe"></div>
+			<li id="results">
+				<p class="fancy">{{ (score >= 0) && 'Oh Joy!' || 'Whoopsie!' }}</p>
+				<h2 class="brandon">You've Been</h2>
+				<img class="nonimg" src="{{ (score >= 0) && '/app/img/nice.png' || '/app/img/naughty.png' }}" alt="{{ (score >= 0) && 'Nice' || 'Naughty' }}" />
+ 				<p class="limit"><b>You scored a {{ score }} on the Naughty or Nice scale.</b><br />
+				{{ flavor }}<br />
+				</p>
+				<p class="social">
+				<small>SHARE YOUR RESULTS:</small><br />
+					<a class="fb" href="http://www.facebook.com/sharer.php?u=http://naughty-or-nice.co" target="_blank">
+						<img src="/app/img/share-fb.png" alt="Share on Facebook" />
+					</a> 
+					<a class="twitter" href="https://twitter.com/intent/tweet?text={{ (score > 0) && 'Oh+Joy%21+I%27ve+been+nice+this+year%2E' || 'Whoops%21+I%27ve+been+naughty+this+year%2E+'}}See+if+you%27ve+been+Naughty+or+Nice+at%3A&url=http%3A%2F%2Fnaughty-or-nice.co%2F" target="_blank">
+						<img src="/app/img/share-tw.png" alt="Share on Twitter" />
+					</a>
+				</p>
+		</ul>
+		</form>
+		<img id="santa" src="/app/img/santa.png" alt="Santa Claus" />
+		<img id="landscape" src="/app/img/winter-scene.png" alt="" />
+		<div id="overlay"></div>
+		<div id="credit"><a href="http://icscreative.com" target="_blank">Merry Christmas from Image Conscious Studios</a>
+  </main>
+  <footer>
+  </footer>

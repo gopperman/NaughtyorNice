@@ -1,0 +1,551 @@
+/* app css stylesheet */
+
+/* webfonts wow */
+@import url("//hello.myfonts.net/count/2956fd");
+  
+@font-face {font-family: 'Appleton';src: url('webfonts/2956FD_0_0.eot');src: url('webfonts/2956FD_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2956FD_0_0.woff') format('woff'),url('webfonts/2956FD_0_0.ttf') format('truetype');}
+.brandon {text-transform: uppercase; font-family:'Brandon Grot W01 Black', 'Avenir LT W01 85 Heavy', sans-serif; font-size: 24px; margin: 0;}
+
+/* colors */
+.red {
+	color: #BD4631;
+}
+
+.darkred {
+	color: #641616;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+	margin: 0;
+	overflow-x: hidden;
+	font-family: 'Avenir LT W01 65 Medium', 'Arial', Helvetica, sans-serif;
+	color: #fff;
+	-webkit-backface-visibility: hidden;
+}
+
+a, a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+h1, h2, h3 {
+	font-weight: 500;
+}
+h2 {
+	font-size: 20px;
+	font-family: 'Avenir LT W01 85 Heavy', 'Arial';
+	margin-bottom: .1em;
+}
+h3 {
+	margin-top: 0;
+	font-size: 14px;
+}
+
+.fancy {font-family: 'Appleton'; font-size: 24px; margin: 0; line-height: 1em; letter-spacing: 2px;}
+header, main {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+header {
+	background: url(/app/img/title-bg.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+}
+
+header .button {
+	margin: 1em 0;
+	position: relative;
+	top: 1em;
+}
+
+main {
+	width: 100%;
+}
+
+#credit {
+	width: 100%; 
+	text-align: center;
+	font-size: 14px;
+	position: absolute;
+	bottom: 10px;
+	z-index: 999999999999;
+}
+#landscape {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	bottom: 0;
+	z-index: 92;
+}
+#santa {
+	position: absolute;
+	bottom: 5%;
+	right: 5%;
+	width: 30%;
+	z-index: 94;
+-webkit-animation:wobble 5s infinite;
+     -moz-animation:wobble 5s infinite;
+      -ms-animation:wobble 5s infinite;
+       -o-animation:wobble 5s infinite;
+          animation:wobble 5s infinite;
+}
+#overlay {
+	background: rgba(0,0,0,.7);
+	width: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	z-index: 91;
+	opacity: 0;	
+}
+
+h1 img {
+	display: block; 
+	margin: 2.5% auto 20px; 
+	max-width: 50%;
+	max-height: 70%;
+	position: relative;
+	z-index: 200;
+}
+.webkit h1 img {max-width: 70%;}
+
+main {
+	z-index: 90;
+	background: url(/app/img/blue-bg.jpg);
+}
+#questions {
+	padding: 4% 8% 0;
+	max-width: 600px;
+	position: relative;
+	z-index: 99;
+}
+#results, #calculating {text-align: center;}
+.questNav {
+	position: relative;
+	z-index: 93;
+	margin-top: 1em;
+	padding-bottom: 1em;
+}
+.questNav .button {
+	margin-right: 10px;
+	-webkit-box-shadow: -2px 2px 0px 0px rgba(100,22,22,1);
+	-moz-box-shadow: -2px 2px 0px 0px rgba(100,22,22,1);
+	box-shadow: -2px 2px 0px 0px rgba(100,22,22,1);
+	padding: 6px;
+	font-size: 12px;
+}
+.questNav .button.green {
+	-webkit-box-shadow: -2px 2px 0px 0px rgba(30,58,38,1);
+	-moz-box-shadow: -2px 2px 0px 0px rgba(30,58,38,1);
+	box-shadow: -2px 2px 0px 0px rgba(30,58,38,1);
+}
+.questNav .button.disabled {
+	display: none;
+}
+#questions li {
+	padding: 10px 2%;
+	background: rgba(0,0,0,.1);
+	-webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+	display: none;
+	list-style-type: none;
+	line-height: 1.5em;
+	font-size: 18px;
+}
+#questions li:first-child {
+	display: block;
+}
+
+#questions li h2 {margin: 0 0 .75em 0; line-height: 1.2em;}
+#questions li h2.brandon {margin: .2em 0 .2em 0;}
+
+.social {padding: 0 0 1em 0;}
+.limit {max-width: 80%; margin: 1em auto 0;}
+.nonimg {max-width: 50%;}
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+.button {
+	color: #fff;
+	background: #BD4631;
+	cursor: pointer;
+	cursor: hand;
+	padding: 12px 10px;
+	 -webkit-border-radius: 2px;
+	 -moz-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-box-shadow: -4px 4px 0px 0px rgba(100,22,22,1);
+	-moz-box-shadow: -4px 4px 0px 0px rgba(100,22,22,1);
+	box-shadow: -4px 4px 0px 0px rgba(100,22,22,1);
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+
+.button.green {
+	background: #008D5E;
+}
+.button.fb {
+	background: #3B5998;
+	margin-right: 10px;
+}
+.button.twitter {
+	background: #4099FF;
+}
+/* Candy Stripe animation */
+.candystripe {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  height: 60px;
+  background: #fff;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+  
+  -webkit-animation: stripe .9s linear infinite;
+  -moz-animation: stripe .9s linear infinite;
+  -o-animation: stripe .9s linear infinite;
+  
+  -moz-box-shadow: inset 0 -10px 29px -1px #000;
+	-webkit-box-shadow: inset 0 -10px 29px -1px #000;
+	box-shadow: inset 0 -10px 29px -1px #000;
+  
+	background-image: url(/app/img/stripe.png);
+}
+@keyframes stripe {
+  0% {background-position-x: 0px;}
+  100% {background-position-x: -70px;}
+}
+@-webkit-keyframes stripe {
+  0% {background-position-x: 0px;}
+  100% {background-position-x: -70px;}
+}
+@-moz-keyframes stripe {
+  0% {background-position: 0px;}
+  100% {background-position: -70px;}
+}
+@-o-keyframes stripe {
+  0% {background-position-x: 0px;}
+  100% {background-position-x: -70px;}
+}
+
+/* Santa animations */
+@-webkit-keyframes wobble  {
+  0%  { -webkit-transform:  rotate(0deg); }
+  25%  { -webkit-transform:  rotate(3deg); }
+  50%  { -webkit-transform:  rotate(0deg); }
+  75%  { -webkit-transform:  rotate(-3deg); }
+  100%  { -webkit-transform:  rotate(0deg); }
+}
+@-moz-keyframes wobble  {
+  0%  { -moz-transform:  rotate(0deg); }
+  25%  { -moz-transform:  rotate(3deg); }
+  50%  { -moz-transform:  rotate(0deg); }
+  75%  { -moz-transform:  rotate(-3deg); }
+  100%  { -moz-transform:  rotate(0deg); }
+}
+@-ms-keyframes wobble  {
+  0%  { -ms-transform:  rotate(0deg); }
+  25%  { -ms-transform:  rotate(3deg); }
+  50%  { -ms-transform:  rotate(0deg); }
+  75%  { -ms-transform:  rotate(-3deg); }
+  100%  { -ms-transform:  rotate(0deg); }
+}
+@-o-keyframes wobble  {
+  0%  { -o-transform:  rotate(0deg); }
+  25%  { -o-transform:  rotate(3deg); }
+  50%  { -o-transform:  rotate(0deg); }
+  75%  { -o-transform:  rotate(-3deg); }
+  100%  { -o-transform:  rotate(0deg); }
+}
+
+@keyframes wobble  {
+  0%  { transform:  rotate(0deg); }
+  25%  { transform:  rotate(3deg); }
+  50%  { transform:  rotate(0deg); }
+  75%  { transform:  rotate(-3deg); }
+  100%  { transform:  rotate(0deg); }
+}
+
+/** SNOW **/
+/**********************************************
+ Based on the CSS3 snow demo created
+ by Estelle Weyl (@estellevw) available at:
+ http://www.standardista.com/sxsw/
+***********************************************/
+
+/* snowflakes container */
+#snowflakesContainer {
+	top: -15px;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+
+/* default animation and transform */
+.snowflake {
+	position: absolute;
+	z-index: 101;
+	display: inline-block;
+	background-color: white;
+	opacity: 0.5;
+	height: 7px;
+	width: 7px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-transform-origin: left -20px;
+	-webkit-animation: falling 7.7s linear 2s infinite;
+	-moz-animation: falling 7.7s linear 2s infinite;
+}
+
+/* animation used for ALL snowflakes, 1000px will be updated by Snowflakes.create() to reflect true height of window */
+@-webkit-keyframes falling {
+	0% { 
+		-webkit-transform: translate3d(0,0,0) rotate(0deg);
+	}
+	100% { 
+		-webkit-transform: translate3d(0,1000px,0) rotate(360deg);
+	}	
+}
+
+@-moz-keyframes falling {
+	0% { 
+		-moz-transform: translate3d(0,0,0) rotate(0deg);
+	}
+	100% { 
+		-moz-transform: translate(0,1000px) rotate(360deg);
+	}	
+}
+
+/* different sizes, and default origins based on size */
+.snowflakeSizeLRG {
+	height:11px;
+	width:11px;
+	-webkit-transform-origin: left -30px;
+	-moz-transform-origin: left -30px;
+}
+.snowflakeSizeMED {
+	height:9px;
+	width:9px;
+	-webkit-transform-origin: left -30px;
+	-moz-transform-origin: left -30px;
+}
+.snowflakeSizeSM {
+	height:5px;
+	width:5px;
+	-webkit-transform-origin: -30px 0;
+	-moz-transform-origin: -30px 0;
+}
+
+/* different speeds so flakes look just that much different */
+.snowflakeSpeedSlow {
+	-webkit-animation-duration: 7.1s; 
+	-webkit-animation-iteration-count: infinite;
+	-webkit-transform-origin: -10px -20px;
+	-moz-animation-duration: 7.1s; 
+	-moz-animation-iteration-count: infinite;
+	-moz-transform-origin: -10px -20px;
+}
+.snowflakeSpeedMed {
+	-webkit-animation-duration: 6.6s; 
+	-webkit-animation-iteration-count: infinite;
+	-webkit-transform-origin: -10px -20px;
+	-moz-animation-duration: 6.6s; 
+	-moz-animation-iteration-count: 12;
+	-moz-transform-origin: -10px -20px;
+}
+.snowflakeSpeedFast {
+	-webkit-animation-duration: 5.9s; 
+	-webkit-animation-iteration-count: infinite;
+	-webkit-transform-origin: -10px -20px;
+	-moz-animation-duration: 5.9s; 
+	-moz-animation-iteration-count: 12;
+	-moz-transform-origin: -10px -20px;
+}
+
+/* different opacities so flakes look just that much different */
+.snowflakeOpacityFaint {
+	opacity: 0.1;
+}
+.snowflakeOpacityLight {
+	opacity: 0.3;
+}
+.snowflakeOpacityDark {
+	opacity: 0.7;
+}
+
+/* different delays so they don't all start at the same time */
+.snowflakeDelay1 {
+	-webkit-animation-delay: 3.4s;
+	-moz-animation-delay: 3.4s;
+}
+.snowflakeDelay2 {
+	-webkit-animation-delay: 1.5s;
+	-moz-animation-delay: 1.5s;
+}
+.snowflakeDelay3 {
+	-webkit-animation-delay: 4.6s;
+	-moz-animation-delay: 4.6s;
+}
+.snowflakeDelay4 {
+	-webkit-animation-delay: 6.3s;
+	-moz-animation-delay: 6.3s;
+}
+.snowflakeDelay5 {
+	-webkit-animation-delay: 0.4s;
+	-moz-animation-delay: 0.4s;
+}
+.snowflakeDelay6 {
+	-webkit-animation-delay: 8.1s;
+	-moz-animation-delay: 8.1s;
+}
+
+/* playing with timing functions to make it a teeny bit more random like */
+.snowflakeSizeLRG.snowflakeDelay2 {-webkit-animation-timing-function:ease-in-out;}
+.snowflakeSizeLRG.snowflakeDelay1 {-webkit-animation-timing-function:ease-out;}
+.snowflakeSizeLRG.snowflakeDelay2 {-moz-animation-timing-function:ease-in-out;}
+.snowflakeSizeLRG.snowflakeDelay1 {-moz-animation-timing-function:ease-out;}
+
+/* playing with opacity to make it a teeny bit more random like */
+.snowflakeSpeedMed.snowflakeDelay2 {opacity: 0.5}
+.snowflakeSpeedMed.snowflakeDelay1 {opacity: 0.3}
+.snowflakeSpeedFast.snowflakeDelay2 {opacity: 0.7}
+.snowflakeSpeedFast.snowflakeDelay1 {opacity: 0.6;
+	-webkit-animation-timing-function:ease-in;
+	-webkit-transform-origin: left 10px;
+	-moz-animation-timing-function:ease-in;
+	-moz-transform-origin: left 10px;}
+.snowflakeSpeedSlow {opacity: 0.8}
+
+/* Chrome windows bugfix */
+.win.chrome input[type="radio"] {
+	-webkit-appearance: checkbox;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 481px) {
+	#questions li {background: transparent;}
+}
+
+@media only screen and (min-width: 768px) {
+	.webkit h1 img {max-width: 70%;}
+	.brandon, .fancy {font-size: 54px;}
+	.nonimg {max-width: 80%;}
+
+	#questions {padding-top: 7.5%;}
+	h2 {
+		font-size: 30px;
+	}
+	h3 {font-size: 20px;}
+
+	#calculating {
+		text-align: center;
+	  height: auto;
+	  padding: 25px 0 50px;
+	}
+
+	#questions #results {
+		position: relative;
+	  -webkit-border-radius: 500px;
+	  -moz-border-radius: 500px;
+	  border-radius: 500px;
+	  height: 550px;
+	  width: 550px;
+	  padding: 50px 20px;
+	  max-height: 90%;
+	  max-width: 90%;
+	}
+	#questions #results {
+	  background: rgba(0,0,0,.1);
+	}
+}
+@media only screen and (min-width: 1030px) {
+}
+@media only screen and (min-width: 1240px) {
+	#questions #results {
+	  top: -60px;
+	}
+	#questions {max-width: 650px;}
+	#questions #results {width: 600px; height: 575px;}
+	#questions li {font-size: 24px;}
+}
+
+@media screen and (orientation:portrait) and (min-device-width : 320px) and (max-device-width : 568px) {
+	#questions {max-width: 90%; padding: 4% 5% 0;}
+	#questions li h2 {font-size: 1.4em;}
+	#questions h3 {font-size: 1.2em; line-height: 1.2em;}
+	#questions li {font-size: 40px; line-height: 2em;}
+	header h1 {margin-top: 30%;}
+	header .button {font-size: 2em; padding: 24px 20px; margin-top: 10em;}
+	.questNav {padding-top: 40px;}
+	.questNav .button {font-size: 30px; padding: 30px;}
+	#questions #results, #questions #calculating {
+    background: transparent;
+  }
+	#questions #results {
+	  -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    height: auto;
+    width: auto;
+		max-width:95%;
+		padding: 4% 2.5% 0;
+	}
+	input[type="radio"], input[type="checkbox"] {
+    -webkit-transform: scale(3, 3);
+    margin: .6em .5em 0 0;
+	}
+	#credit {font-size: 2em;}
+}
+
+@media screen and (orientation:landscape) {
+	#questions #results {
+		position: relative;
+		top: -90px;
+		padding-bottom: 0;
+	}
+}
+@media screen and (-webkit-min-device-pixel-ratio: 1.5) {
+	header h1 img, .webkit header h1 img {max-width: 839px;}
+}
