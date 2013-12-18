@@ -12,9 +12,12 @@
 	<link rel="stylesheet" href="/app/css/app.css">
 
 	<meta property="og:url" content="http://naughty-or-nice.co" />
+	<meta property="og:type" content="website"/>
 	<meta property="og:title" content="Have you been NAUGHTY or NICE this year? Take the test and find out..." />
 	<meta property="og:description" content="Santa lost his naughty or nice list, so help him by answering a few questions. Be Honest!" />
-	<meta property="og:image" content="http://xmas.gopperman.com/app/img/santa-fb.jpg" />
+	<meta property="og:image" content="http://naughty-or-nice.co/app/img/santa-fb.jpg" />
+	<meta property="og:site_name" content="Naughty or Nice by Image Conscious Studios"/>
+
 	<meta name="google-site-verification" content="xpRBOuCeurtieR3nm2JQ3Zqx8DkOicWKQY0zkfffBHM" />
 </head>
 <body id="letitsnow">
