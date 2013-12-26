@@ -65,7 +65,7 @@ Snowflakes.prototype.updateKeyframeHeight = function() {
 		} else if (keyframes.cssText.match(new RegExp('moz'))) {
 			var newRule = "-moz-transform: translate(0,"+height+"px) rotate(360deg);";
 		}
-		keyframes.insertRule(newRule);
+		("appendRule" in keyframes) ? keyframes.appendRule(newRule) : keyframes.insertRule(newRule);
 	}
 }
 
