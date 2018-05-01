@@ -1,5 +1,5 @@
   <header class="">
-    <h1><img src="/app/img/NaughtyOrNice.png" alt="The Naughty or Nice Meter" /></h1>
+    <h1><img src="app/img/NaughtyOrNice.png" alt="The Naughty or Nice Meter" /></h1>
 		<a id="findOut" class="button red" ng-click="showQuiz()">Find Out The Truth</a>
   </header>
   <main class="">
@@ -46,7 +46,7 @@
 				</div>
 
 			<li id="q4">
-				<h2>Now's the time to win some brownie points. How about some good deeds?</h2>				
+				<h2>Now's the time to win some brownie points. How about some good deeds?</h2>
 				<input type="checkbox" name="q4" id="4-1" class="answer" value="10"> <label for="4-1">You helped an old lady cross the street. </label><br>
 				<input type="checkbox" name="q4" id="4-2" class="answer" value="10"> <label for="4-2">You gave a donation to charity. </label><br>
 				<input type="checkbox" name="q4" id="4-3" class="answer" value="30"> <label for="4-3">You baked Christmas cookies for all of your friends.</label><br>
@@ -116,23 +116,23 @@
 			<li id="results">
 				<p class="fancy">{{ (score >= 0) && 'Oh Joy!' || 'Whoopsie!' }}</p>
 				<h2 class="brandon">You've Been</h2>
-				<img class="nonimg" src="{{ (score >= 0) && '/app/img/nice.png' || '/app/img/naughty.png' }}" alt="{{ (score >= 0) && 'Nice' || 'Naughty' }}" />
+				<img class="nonimg" src="{{ (score >= 0) && 'app/img/nice.png' || 'app/img/naughty.png' }}" alt="{{ (score >= 0) && 'Nice' || 'Naughty' }}" />
  				<p class="limit"><b>You scored {{ score }} on the Naughty or Nice meter.</b><br />
 				<small>{{ flavor }}</small><br />
 				</p>
 				<p class="social">
 				<small>SHARE YOUR RESULTS:</small><br />
 					<a class="fb" href="http://www.facebook.com/sharer.php?u=http://naughty-or-nice.co" target="_blank">
-						<img src="/app/img/share-fb.png" alt="Share on Facebook" />
-					</a> 
+						<img src="app/img/share-fb.png" alt="Share on Facebook" />
+					</a>
 					<a class="twitter" href="https://twitter.com/intent/tweet?text={{ (score > 0) && 'Oh+Joy%21+I%27ve+been+nice+this+year%2E' || 'Whoops%21+I%27ve+been+naughty+this+year%2E+'}}See+if+you%27ve+been+Naughty+or+Nice+at%3A&url=http%3A%2F%2Fnaughty-or-nice.co%2F" target="_blank">
-						<img src="/app/img/share-tw.png" alt="Share on Twitter" />
+						<img src="app/img/share-tw.png" alt="Share on Twitter" />
 					</a>
 				</p>
 		</ul>
 		</form>
-		<img id="santa" src="/app/img/santa.png" alt="Santa Claus" />
-		<img id="landscape" src="/app/img/winter-scene.png" alt="" />
+		<img id="santa" src="app/img/santa.png" alt="Santa Claus" />
+		<img id="landscape" src="app/img/winter-scene.png" alt="" />
 		<div id="overlay"></div>
 		<div id="credit"><a href="http://icscreative.com" target="_blank">Merry Christmas from Image Conscious Studios</a>
   </main>
