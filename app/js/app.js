@@ -7,5 +7,5 @@ angular.module('NoN', []).
     $routeProvider.when('/', {templateUrl: 'app/partials/main.html', controller: 'mainController'});
     $routeProvider.when('/naughty', {templateUrl: 'app/partials/naughty.html', controller: 'MyCtrl'});
     $routeProvider.when('/nice', {templateUrl: 'app/partials/nice.html', controller: 'MyCtrl2'});
-    $routeProvider.otherwise({redirectTo: '/'});
+    $routeProvider.otherwise({redirectTo: ''});
   }]);
