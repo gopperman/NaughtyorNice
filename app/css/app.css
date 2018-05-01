@@ -2,7 +2,7 @@
 
 /* webfonts wow */
 @import url("//hello.myfonts.net/count/2956fd");
-  
+
 @font-face {font-family: 'Appleton';src: url('webfonts/2956FD_0_0.eot');src: url('webfonts/2956FD_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2956FD_0_0.woff') format('woff'),url('webfonts/2956FD_0_0.ttf') format('truetype');}
 .brandon {text-transform: uppercase; font-family:'Brandon Grot W01 Black', 'Avenir LT W01 85 Heavy', sans-serif; font-size: 24px; margin: 0;}
 
@@ -54,7 +54,7 @@ header, main {
 	bottom: 0;
 }
 header {
-	background: url(/app/img/title-bg.jpg) no-repeat center center;
+	background: url(../img/title-bg.jpg) no-repeat center center;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -75,7 +75,7 @@ main {
 }
 
 #credit {
-	width: 100%; 
+	width: 100%;
 	text-align: center;
 	font-size: 14px;
 	position: absolute;
@@ -108,12 +108,12 @@ main {
 	top: 0;
 	bottom: 0;
 	z-index: 91;
-	opacity: 0;	
+	opacity: 0;
 }
 
 h1 img {
-	display: block; 
-	margin: 2.5% auto 20px; 
+	display: block;
+	margin: 2.5% auto 20px;
 	max-width: 50%;
 	max-height: 70%;
 	position: relative;
@@ -123,7 +123,7 @@ h1 img {
 
 main {
 	z-index: 90;
-	background: url(/app/img/blue-bg.jpg);
+	background: url(../img/blue-bg.jpg);
 }
 #questions {
 	padding: 4% 8% 0;
@@ -243,16 +243,16 @@ main {
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
   border-radius: 40px;
-  
+
   -webkit-animation: stripe .9s linear infinite;
   -moz-animation: stripe .9s linear infinite;
   -o-animation: stripe .9s linear infinite;
-  
+
   -moz-box-shadow: inset 0 -10px 29px -1px #000;
 	-webkit-box-shadow: inset 0 -10px 29px -1px #000;
 	box-shadow: inset 0 -10px 29px -1px #000;
-  
-	background-image: url(/app/img/stripe.png);
+
+	background-image: url(../img/stripe.png);
 }
 @keyframes stripe {
   0% {background-position-x: 0px;}
@@ -343,21 +343,21 @@ main {
 
 /* animation used for ALL snowflakes, 1000px will be updated by Snowflakes.create() to reflect true height of window */
 @-webkit-keyframes falling {
-	0% { 
+	0% {
 		-webkit-transform: translate3d(0,0,0) rotate(0deg);
 	}
-	100% { 
+	100% {
 		-webkit-transform: translate3d(0,1000px,0) rotate(360deg);
-	}	
+	}
 }
 
 @-moz-keyframes falling {
-	0% { 
+	0% {
 		-moz-transform: translate3d(0,0,0) rotate(0deg);
 	}
-	100% { 
+	100% {
 		-moz-transform: translate(0,1000px) rotate(360deg);
-	}	
+	}
 }
 
 /* different sizes, and default origins based on size */
@@ -382,26 +382,26 @@ main {
 
 /* different speeds so flakes look just that much different */
 .snowflakeSpeedSlow {
-	-webkit-animation-duration: 7.1s; 
+	-webkit-animation-duration: 7.1s;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-transform-origin: -10px -20px;
-	-moz-animation-duration: 7.1s; 
+	-moz-animation-duration: 7.1s;
 	-moz-animation-iteration-count: infinite;
 	-moz-transform-origin: -10px -20px;
 }
 .snowflakeSpeedMed {
-	-webkit-animation-duration: 6.6s; 
+	-webkit-animation-duration: 6.6s;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-transform-origin: -10px -20px;
-	-moz-animation-duration: 6.6s; 
+	-moz-animation-duration: 6.6s;
 	-moz-animation-iteration-count: 12;
 	-moz-transform-origin: -10px -20px;
 }
 .snowflakeSpeedFast {
-	-webkit-animation-duration: 5.9s; 
+	-webkit-animation-duration: 5.9s;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-transform-origin: -10px -20px;
-	-moz-animation-duration: 5.9s; 
+	-moz-animation-duration: 5.9s;
 	-moz-animation-iteration-count: 12;
 	-moz-transform-origin: -10px -20px;
 }
@@ -509,7 +509,7 @@ main {
 	  top: -60px;
 	}
 	#questions {max-width: 650px;}
-	#questions #results {width: 600px; 
+	#questions #results {width: 600px;
 		height: 540px;
 	}
 	#questions #results .limit {font-size: 20px; margin: .5em auto; line-height: 1.2em;}
